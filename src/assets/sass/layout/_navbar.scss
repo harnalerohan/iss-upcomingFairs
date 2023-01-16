@@ -1,0 +1,27 @@
+.navbar {
+  padding: 0;
+  img {
+    width: 15rem;
+  }
+  .navbar-nav {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    .nav-item {
+      // margin-left: px;
+      text-decoration: none;
+      .nav-link {
+        color: $color-header-primary;
+        font-size: 1rem;
+        text-align: center;
+      }
+      button {
+        background-color: $color-button-primary;
+        border-radius: 20%;
+        font-weight: bold;
+      }
+      .green {
+        background-color: $color-button-secondary;
+      }
+    }
+  }
+}

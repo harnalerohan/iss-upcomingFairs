@@ -1,0 +1,32 @@
+<section class="upcomingFairs">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 offset-md-1">
+        <h5 class="mb-4">Upcoming Fairs and iFairs</h5>
+        <!-- Fair cards div -->
+        <div class="row mt-2 fairCards"*ngFor="let fair of upcomingFairs" (click)="findCard(fair.fairId)">
+          <div class="col-md-1">
+            <img src="https://pbs.twimg.com/profile_images/769195847586381824/nPrHT6kQ_400x400.jpg" alt="ISS icon">
+          </div>
+          <div class="col-md-10 offset-md-1">
+            <h6>{{fair.fairName}}</h6>
+            <p><i class="fa-regular fa-calendar-days"></i> {{fair.startDate * 1000 | date}} - {{fair.endDate * 1000 | date}}</p>
+            <p><a href="">Add To Calendar</a></p>
+            <p><i class="fa-solid fa-location-dot"></i> {{fair.location!.city}}, {{fair.location.country}}</p>
+            <p><i class="fa-solid fa-school-flag"></i> {{fair.numberOfSchoolsRegistered}} Schoold Registered</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="card" style="width:90%" [ngStyle]="{backgroundImage: backgroundString}">
+          <!-- <img class="card-img-top" alt="Card image cap"> -->
+          <div class="card-body">
+            <h5 class="card-title">{{selectedItem.fairName}}</h5>
+            <p class="card-text"> {{selectedItem.startDate * 1000 | date}} - {{selectedItem.endDate * 1000 | date}}</p>
+            <a href="#" class="btn btn-light"><span>Upgrade to Register for fair</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
