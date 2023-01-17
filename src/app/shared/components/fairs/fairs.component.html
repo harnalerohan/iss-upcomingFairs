@@ -1,0 +1,12 @@
+<section class="upcomingFairs sectionPadding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 offset-md-1">
+        <app-fair-card [upcomingFairs]="upcomingFairsP" (emitSelectedCard)="getSelectedCardDetails($event)"></app-fair-card>
+      </div>
+      <div class="col-md-7">
+        <app-fair-details [selectedItem]="selectedItem"></app-fair-details>
+      </div>
+    </div>
+  </div>
+</section>

@@ -26,4 +26,5 @@ export interface IUpcomingFairs {
   type: string,
   candidateDescription: string
   schoolDescription: string
+  backgroundString?: string
 }

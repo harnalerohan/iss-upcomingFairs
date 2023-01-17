@@ -1,13 +1,14 @@
 .navbar {
   padding: 0;
+  margin-left: calc(7%);
+  margin-right: calc(7%);
   img {
     width: 15rem;
   }
   .navbar-nav {
-    font-family: 'PT Sans', sans-serif;
     font-weight: bold;
     .nav-item {
-      // margin-left: px;
+      margin-right: 10px;
       text-decoration: none;
       .nav-link {
         color: $color-header-primary;
@@ -18,6 +19,7 @@
         background-color: $color-button-primary;
         border-radius: 20%;
         font-weight: bold;
+        border: none;
       }
       .green {
         background-color: $color-button-secondary;

@@ -1,0 +1,56 @@
+<div
+  class="card"
+  style="width: 90%"
+  [ngStyle]="{ backgroundImage: selectedItem.backgroundString }"
+  >
+  <div class="card-body">
+    <h5 class="card-title">{{ selectedItem.fairName }}</h5>
+    <p class="card-text">
+      {{ selectedItem.startDate * 1000 | date }} -
+      {{ selectedItem.endDate * 1000 | date }}
+    </p>
+    <a href="#" class="btn btn-light"
+      ><span>Upgrade to Register for fair</span></a
+    >
+  </div>
+</div>
+
+<div class="card detailCard mt-4" style="width: 90%">
+  <div class="row">
+    <div class="card col-md-4 m-4 p-3">
+      <p class="card-text">
+        <i class="fa-regular fa-calendar-days"></i> Date
+      </p>
+      <p>
+        {{ selectedItem.startDate * 1000 | date }}
+      </p>
+      <p>
+        {{ selectedItem.endDate * 1000 | date }}
+      </p>
+      <p>
+        {{selectedItem.fairStartTime}} - {{selectedItem.fairEndTime}}
+      </p>
+      <p>
+        {{selectedItem.timezoneId}}
+      </p>
+      <br><br>
+      <p><a href="">Add to Calendar</a></p>
+      <br><br>
+      <p>Last Registration Date</p>
+      <p>Jan 31, 2023</p>
+    </div>
+    <div class="card col-md-4 m-4 p-3">
+      <p>
+        <i class="fa-solid fa-location-dot"></i> Location
+      </p>
+      <p class="lock">
+        <i class="fa-duotone fa-lock-keyhole"></i>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="description mt-4">
+  <h5>Description</h5>
+  <p [innerHTML]="selectedItem.candidateDescription" class="mt-4"></p>
+</div>

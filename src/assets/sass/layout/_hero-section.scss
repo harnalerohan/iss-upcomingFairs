@@ -1,20 +1,23 @@
 .warning {
   background-color: red;
   padding-top: 5px;
-  h6, p {
+  h5, p {
     color: white;
-  }
-  span {
-    font-weight: bold;
   }
   p {
     font-size: 0.8rem;
+  }
+  .profile{
+    text-decoration: underline;
+    span {
+      font-weight: bold;
+    }
   }
 }
 
 .jobFairs {
   padding-top: 2rem;
-  background: linear-gradient(0.25turn, #f9cb9a, #8fffdd);
+  background: linear-gradient(0.25turn, #fef2ce, #cdfaf3);
   h3 {
     font-size: $font-size-h3;
     font-weight: 700;
@@ -26,6 +29,9 @@
     position: relative;
   }
   img {
-    transform: scale(0.7);
+    width: 65%;
+    margin-left: 15%;
+    margin-top: 10%;
+    // padding-bottom: 1%;
   }
 }
